@@ -20,7 +20,7 @@ def predict():
         features = [float(x) for x in request.form.values()]
         final_features = [np.array(features)]
         
-        # Prediction karo
+        # Prediction 
         prediction = model.predict(final_features)
         output = round(prediction[0], 2)
         
